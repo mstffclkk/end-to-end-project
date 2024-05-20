@@ -1,14 +1,16 @@
 
-# Zoe Depth Estimation API
+# Zoe Depth Estimation
 
-This repo turn 2d images to depthmap.
+A brief description of what this project does and who it's for
 
 
 ## Usage/Examples
 
 ### CLI Usage
 ```bash
-Depth estimation using ZoeDepth
+usage: cli.py [-h] input_image output_image
+
+Depth estimation using ZoeDepth.
 
 positional arguments:
   input_image   Path to input image.
@@ -17,16 +19,15 @@ positional arguments:
 options:
   -h, --help    show this help message and exit
 ```
-
 ### API Usage
-```
-http://127.0.0.1:8000/predict
-```
 
+```
+http://127.0.0.1:8041/predict
+```
 
 ## Installation
 
-Install depth estimation project with pip.
+Install depth estimation project with pip
 
 ```bash
 pip install -r requirements.txt
@@ -36,17 +37,15 @@ pip install -r requirements.txt
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`API_KEY`
-
-`ANOTHER_API_KEY`
-
+`IMG_API_KEY`
 
 ## Deployment
 
 To deploy this project run
 
 ```bash
-  npm run deploy
+docker build -t depth_estimation .
+docker run -d -p 8041:8041 depth_estimation
 ```
 
 
