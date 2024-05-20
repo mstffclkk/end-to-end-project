@@ -6,6 +6,7 @@ This repo turn 2d images to depthmap.
 
 ## Usage/Examples
 
+### CLI Usage
 ```bash
 Depth estimation using ZoeDepth
 
@@ -15,6 +16,11 @@ positional arguments:
 
 options:
   -h, --help    show this help message and exit
+```
+
+### API Usage
+```
+http://127.0.0.1:8000/predict
 ```
 
 
