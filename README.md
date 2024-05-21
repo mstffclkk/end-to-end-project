@@ -1,7 +1,7 @@
 
 # Zoe Depth Estimation
 
-A brief description of what this project does and who it's for
+This repo turn 2d images to depthmap.
 
 
 ## Usage/Examples
